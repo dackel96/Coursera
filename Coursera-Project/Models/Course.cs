@@ -22,5 +22,7 @@ namespace Coursera_Project.Models
 
         [ForeignKey(nameof(InstructorId))]
         public Instructor Instructor { get; set; } = null!;
+
+        public IEnumerable<StudentCourse> StudentCourses { get; set; } = new HashSet<StudentCourse>();
     }
 }

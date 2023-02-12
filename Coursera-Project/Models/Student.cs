@@ -16,5 +16,7 @@ namespace Coursera_Project.Models
         public string LastName { get; set; } = null!;
 
         public DateTime TimeCreated { get; set; }
+
+        public IEnumerable<StudentCourse> StudentCourses { get; set; } = new HashSet<StudentCourse>();
     }
 }
