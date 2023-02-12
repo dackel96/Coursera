@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-
 using static Coursera_Project.Models.StudentConstants;
 
 namespace Coursera_Project.Models

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Coursera_Project.Models
+﻿namespace Coursera_Project.Models
 {
     public class StudentCourse
     {

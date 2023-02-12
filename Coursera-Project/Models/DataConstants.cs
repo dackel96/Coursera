@@ -2,6 +2,7 @@
 {
     public static class DataConstants
     {
+        public const int CourseNameMaxLength = 150;
     }
     public static class StudentConstants
     {
