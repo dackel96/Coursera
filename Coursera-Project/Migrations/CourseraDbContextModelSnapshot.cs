@@ -51,7 +51,7 @@ namespace CourseraProject.Migrations
 
                     b.HasIndex("InstructorId");
 
-                    b.ToTable("Courses");
+                    b.ToTable("Courses", (string)null);
                 });
 
             modelBuilder.Entity("Coursera_Project.Models.Instructor", b =>
@@ -77,7 +77,7 @@ namespace CourseraProject.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Instructors");
+                    b.ToTable("Instructors", (string)null);
                 });
 
             modelBuilder.Entity("Coursera_Project.Models.Student", b =>
@@ -101,7 +101,7 @@ namespace CourseraProject.Migrations
 
                     b.HasKey("Pin");
 
-                    b.ToTable("Students");
+                    b.ToTable("Students", (string)null);
                 });
 
             modelBuilder.Entity("Coursera_Project.Models.StudentCourse", b =>
@@ -117,7 +117,7 @@ namespace CourseraProject.Migrations
 
                     b.HasKey("StudentPin", "CourseId");
 
-                    b.ToTable("StudentCourses");
+                    b.ToTable("StudentCourses", (string)null);
                 });
 
             modelBuilder.Entity("Coursera_Project.Models.Course", b =>

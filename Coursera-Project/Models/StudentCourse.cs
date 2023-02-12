@@ -1,4 +1,6 @@
-﻿namespace Coursera_Project.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Coursera_Project.Models
 {
     public class StudentCourse
     {
