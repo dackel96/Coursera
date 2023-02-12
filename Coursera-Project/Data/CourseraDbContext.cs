@@ -1,11 +1,5 @@
 ﻿using Coursera_Project.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Coursera_Project.Data
 {
@@ -31,6 +25,18 @@ namespace Coursera_Project.Data
                 optionsBuilder
                     .UseSqlServer(Configuration.ConnectionString);
             }
+
+            base.OnConfiguring(optionsBuilder);
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<StudentCourse>(x =>
+            {
+                x.HasKey(x => new { x.StudentPin, x.CourseId });
+            });
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
